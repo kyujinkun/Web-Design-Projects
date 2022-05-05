@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    height: 120vh;
+    width: 100vw;
+    background-image: linear-gradient(180deg,#121818,#3a4342,#a2a093,#a8a598,#e1dad0);
+}
+header{
+    height: 60%;
+    width: 100vw;
+    background-image: url(../Imgs/gabriela-9pc9CZWlwNU-unsplash.jpg);
+    background-size: cover;
+    position: relative;
+}
+/* start navigation */
+.navigation{
+    color: #edeae1;
+    display: flex;
+    justify-content: space-between;
+}
+.navigation h1{
+    font-family: 'Segoe Print';
+    margin: 16px 0px 0px 64px;
+    text-shadow: 1px 1px 1px  #333;
+    font-size: 2rem;
+}
+.navigation h1 a{
+    text-decoration: none;
+    color: #edeae1;
+    font-family: 'Segoe Print';
+    text-shadow: 1px 1px 1px  #333;
+}
+.navigation nav{
+    margin: 16px 64px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navigation nav a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 32px;
+    width: 100px;
+    height: 35px;
+    font-size: 1.2rem;
+    color: #c0bbad;
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid #c0bbad;
+    border-radius: 5px;
+}
+.navh:hover{
+    background-color: #c0bbad;
+    color: #101616;
+    border: 2px solid #101616;
+    box-shadow: 1px 1px 1px 1px #c0bbad;
+}
+/* end navigation */
+
+/* start navbar */
+.navbar{
+    width: 30rem;
+    height: 10rem;
+    background: rgba(0, 0, 0, 0.600);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #eee;
+    box-shadow: 1px 1px 10px 0px #9e9e9e;
+}
+.navbar .title{
+    font-size: 1.7rem;
+}
+.navbar .par{
+    font-size: 0.9rem;
+}
+.navbar a{
+    font-size: 0.9rem;
+    text-decoration: none;
+    color: #333;
+    background-color: #edeae1;
+    width: 150px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-weight: bold;
+}
+.navbar a:hover{
+    background-color: #b7b5ae;
+}
+/* end of navbar */
+footer{
+    height: 40%;
+    width: 100vw;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 't'
+                        'n';
+}
+footer .title{
+    min-height: 2vh;
+    max-height: 5vh;
+    grid-area: t;
+    text-align: center;
+    margin: 1em 0;
+}
+footer nav{
+    grid-area: n;
+    width: 100vw;
+    min-width: 15vh;
+    max-height: 25vh;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-areas: 'img1 img2 img3'
+                        'p1 p2 p3';
+    gap: 1em;
+    justify-items: center;
+}
+footer nav img{
+    min-width: 300px;
+    max-width: 450px;
+    min-height: 90px;
+    max-height: 240px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 10px 0px #1e2424;
+}
+footer nav .i1{
+    grid-area: img1;
+}
+footer nav .i2{
+    grid-area: img2;
+}
+footer nav .i3{
+    grid-area: img3;
+}
+footer nav p{
+    grid-area: p;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.5rem;
+    height: fit-content;
+}
+footer nav p span{
+    color: cadetblue;
+    font-size: 2rem;
+}
+
+footer nav .p1{
+    grid-area: p1;
+}
+footer nav .p2{
+    grid-area: p2;
+}
+footer nav .p3{
+    grid-area: p3;
+}
+footer .media{
+    min-height: 5vh;
+    max-height: 10vh;
+    background-color: black;
+    position: relative;
+}
+.media .a1 {
+    position: absolute;
+    text-align: center;
+    min-width: 40px;
+    max-width: 70px;
+    min-height: 40px;
+    max-height: 70px;
+    border:4px solid #eee;
+    top: 50%;
+    left: 50%;
+    transform: translate(-200%,-50%);
+}
+.media .a2 {
+    position: absolute;
+    text-align: center;
+    min-width: 40px;
+    max-width: 70px;
+    min-height: 40px;
+    max-height: 70px;
+    border:4px solid #eee;
+    top: 50%;
+    left: 50%;
+    transform: translate(50%,-50%);
+}
+
+
